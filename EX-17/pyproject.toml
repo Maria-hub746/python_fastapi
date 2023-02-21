@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ex-17"
+version = "0.1.0"
+description = ""
+authors = ["Maria-hub746 <113303447+Maria-hub746@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "ex_17"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.92.0"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+alembic = "^1.9.4"
+psycopg2 = "^2.9.5"
+pydantic = {extras = ["email"], version = "^1.10.5"}
+envparse = "^0.2.0"
+asyncpg = "^0.27.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
